@@ -28,7 +28,12 @@ class Board extends React.Component {
     };
   }
   renderSquare(i) {
-    return <Squared valuee={this.state.squares[i]} />;
+    return (
+      <Squared
+        valuee={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    );
   }
 
   render() {
