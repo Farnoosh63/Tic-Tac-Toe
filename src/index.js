@@ -5,8 +5,8 @@ class Squared extends React.Component {
   constructor(props) {
     super(props);
     this.state= {
-      value: null,
-    }
+      valuee: null,
+    };
   }
   render() {
     return (
@@ -25,14 +25,10 @@ class Board extends React.Component {
     super(props);
     this.state = {
       squares: Array(9).fill(null),
-    }
+    };
   }
   renderSquare(i) {
-    return (
-      <Squared
-      valuee={i}
-    />
-    );
+    return <Squared valuee={this.state.squares[i]} />;
   }
 
   render() {
