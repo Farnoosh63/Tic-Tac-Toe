@@ -1,20 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-class Square extends React.Component {
+class Squared extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      value: this.props.value,
-    };
+    this.state= {
+      value: null,
+    }
   }
   render() {
     return (
-      <button 
-        className="square" 
-        onClick={() => this.setState({value: 'X'})}
+      <button
+        className="square"
+        onClick={() => this.setState({valuee: 'X'})}
       >
-        {this.state.value}
+        {this.state.valuee}
       </button>
     );
   }
@@ -22,7 +22,11 @@ class Square extends React.Component {
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square value={i} />;
+    return (
+      <Squared
+      valuee={i}
+    />
+    );
   }
 
   render() {
