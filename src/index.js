@@ -6,7 +6,7 @@ class Squared extends React.Component {
     return (
       <button
         className="square"
-        onClick={() => this.props.onClick()}
+        onClick={() => this.props.onClicky()}
       >
         {this.props.valuee}
       </button>
@@ -21,11 +21,17 @@ class Board extends React.Component {
       squares: Array(9).fill(null),
     };
   }
+
+  handleClicky(i){
+    const squares= this.state.squares.slice();
+    squares[i] = 'X';
+    this.setState({squares: squares});
+  }
   renderSquare(i) {
     return (
       <Squared
         valuee={this.state.squares[i]}
-        onClick={() => this.handleClick(i)}
+        onClicky={() => this.handleClicky(i)}
       />
     );
   }
