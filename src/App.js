@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
-
-import GameBoard from './components/Game';
-import MainNavigation from './components/MainNavigation';
+import CodeTogether from './components/codetogether/CodeTogether';
+import GameBoard from './components/game/Game';
+import MainNavigation from './components/navigation/MainNavigation';
 
 
 function App() {
@@ -12,7 +12,9 @@ function App() {
         <Route path="/" exact>
           <GameBoard />
         </Route>
-        <Route path="/code-together">codetogether</Route>
+        <Route path="/code-together">
+          <CodeTogether />
+        </Route>
       </Switch>
     </div>
   );
