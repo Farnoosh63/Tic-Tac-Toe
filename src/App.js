@@ -1,5 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
-import CodeTogether from './components/codetogether/CodeTogether';
+import PairProgramming from "./components/pairprogramming/PairProgramming";
 import GameBoard from './components/game/Game';
 import MainNavigation from './components/navigation/MainNavigation';
 
@@ -12,8 +12,8 @@ function App() {
         <Route path="/" exact>
           <GameBoard />
         </Route>
-        <Route path="/code-together">
-          <CodeTogether />
+        <Route path="/pair-programming">
+          <PairProgramming />
         </Route>
       </Switch>
     </div>

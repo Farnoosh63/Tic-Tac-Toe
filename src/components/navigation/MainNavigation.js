@@ -13,8 +13,8 @@ function MainNavigation() {
             </Link>
           </li>
           <li>
-            <Link to="/code-together">
-              Code Together
+            <Link to="/pair-programming">
+              Pair Programming
             </Link>
           </li>
         </ul>
