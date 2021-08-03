@@ -1,4 +1,4 @@
-import  classes  from './PairProgramming.module.css';
+import classes from "./PairProgramming.module.css";
 
 function PairProgramming() {
   return (
@@ -49,7 +49,10 @@ function PairProgramming() {
           read-only access.
         </li>
         <li>Everybody can code on the same file at the same time</li>
-        <li>Read/Write access to Terminal/ Console for logged in users (Microsoft Account or Github Account)</li>
+        <li>
+          Read/Write access to Terminal/ Console for logged in users (Microsoft
+          Account or Github Account)
+        </li>
         <li>Share a web page by installing "Browser Preview" Extension.</li>
       </ul>
       <ul className={classes.left}>
