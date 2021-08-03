@@ -1,13 +1,11 @@
 import { Route, Switch } from 'react-router-dom';
-import PairProgramming from "./components/pairprogramming/PairProgramming";
 import GameBoard from './components/game/Game';
-import MainNavigation from './components/navigation/MainNavigation';
-
+import Layout from './components/layout/Layout';
+import PairProgramming from './components/pairprogramming/PairProgramming';
 
 function App() {
   return (
-    <div>
-      <MainNavigation />
+    <Layout >
       <Switch>
         <Route path="/" exact>
           <GameBoard />
@@ -16,7 +14,7 @@ function App() {
           <PairProgramming />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
