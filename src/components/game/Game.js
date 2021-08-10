@@ -2,14 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import classes from './Game.module.css';
 
-class Squared extends React.Component {
-  render() {
-    return (
-      <button className={classes.square} onClick={() => this.props.onClicky()}>
-        {this.props.valuee}
-      </button>
-    );
-  }
+function Squared (props) {
+  return (
+    <button className={classes.square} onClick={props.onClicky}>
+      {props.valuee}
+    </button>
+  );
 }
 
 class Board extends React.Component {
@@ -22,7 +20,6 @@ class Board extends React.Component {
 
   handleClicky(i) {
     const squares = this.state.squares.slice();
-    console.log(squares);
     squares[i] = "X";
     this.setState({ squares: squares });
   }
