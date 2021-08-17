@@ -1,0 +1,19 @@
+.borderNone {
+  border: none;
+}
+
+.mt4 {
+  margin-top: 4rem;
+}
+
+.secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.warning {
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
