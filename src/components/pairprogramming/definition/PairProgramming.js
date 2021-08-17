@@ -1,6 +1,8 @@
 import classes from "./PairProgramming.module.css";
 import Button  from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 function PairProgramming() {
   return (
@@ -15,18 +17,25 @@ function PairProgramming() {
       <Container>
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Button variant="success" size="lg" href="/">
-              &#8810; Back
+            <Button variant="success" size="lg">
+              <Link
+                to="/Tic-Tac-Toe"
+                className="text-decoration-none"
+                style={{ color: "white" }}
+              >
+                &#8810; Back
+              </Link>
             </Button>
           </Col>
           <Col md={4}>
-            <Button
-              variant="success"
-              size="lg"
-              href="/pair-programming/benefits"
-              className={classes.right}
-            >
-              Next &#8811;
+            <Button variant="success" size="lg" className={classes.right}>
+              <Link
+                to="/Tic-Tac-Toe/pair-programming/benefits"
+                className="text-decoration-none"
+                style={{ color: "white" }}
+              >
+                Next &#8811;
+              </Link>
             </Button>
           </Col>
         </Row>

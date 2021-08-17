@@ -11,19 +11,19 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/Tic-Tac-Toe" exact>
           <Home />
         </Route>
-        <Route path="/game">
+        <Route path="/Tic-Tac-Toe/game" exact>
           <GameBoard />
         </Route>
-        <Route path="/pair-programming" exact>
+        <Route path="/Tic-Tac-Toe/pair-programming" exact>
           <PairProgramming />
         </Route>
-        <Route path="/pair-programming/benefits">
+        <Route path="/Tic-Tac-Toe/pair-programming/benefits" exact>
           <Benefits />
         </Route>
-        <Route path="/pair-programming/tools">
+        <Route path="/Tic-Tac-Toe/pair-programming/tools" exact>
           <Tools />
         </Route>
       </Switch>
