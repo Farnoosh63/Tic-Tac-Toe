@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.alert-primary {
+    color: #084298;
+    background-color: #1696d2;
+    border-color: #1696d2;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}

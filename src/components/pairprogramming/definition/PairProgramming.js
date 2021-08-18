@@ -10,7 +10,7 @@ function PairProgramming() {
       <h3>What is Pair Programming?</h3>
       <p>
         Pair Programming is where two people wite code together using one
-        computer at the same time. In the virtual world, we will virtually share
+        computer at the same time. In the virtual world, we will remotely share
         a screen and the same code editor and both programmers can control the
         keyboard at the same and programming out loud.
       </p>

@@ -1,11 +1,30 @@
-import { Card, Button, ListGroup, ListGroupItem, Alert } from "react-bootstrap";
+import {
+  Card,
+  ListGroup,
+  ListGroupItem,
+  Alert,
+  Breadcrumb,
+} from "react-bootstrap";
 import classes from './Tools.module.css';
+
+const image = {
+    width: "5rem",
+    padding: "1px 1px 1px 0px"
+}
 function Tools() {
   return (
     <div>
       <Card className={classes.borderNone}>
         <Card.Body>
-          <Card.Title>VS Code Live Share</Card.Title>
+          <Card.Body className="d-flex align-items-center">
+            <Card.Img
+              style={image}
+              variant="top"
+              src="https://raw.githubusercontent.com/MicrosoftDocs/live-share/master/docs/media/vsls-icon.svg"
+            />
+            <Card.Title className="mt-4">VS Code Live Share</Card.Title>
+          </Card.Body>
+
           <Card.Text>
             It's an extension in VS Code, meaning you need a Microsoft account
             or a GitHub account to use it.
@@ -44,16 +63,21 @@ function Tools() {
             </ListGroupItem>
           </ListGroup>
         </Card.Body>
-        <Card.Body className="d-flex justify-content-center">
-          <Card.Img
-            style={{ width: "18rem" }}
-            variant="bottom"
-            src="https://raw.githubusercontent.com/MicrosoftDocs/live-share/master/docs/media/vsls-icon.svg"
-          />
-        </Card.Body>
       </Card>
-      <Alert variant="primary">
-        <Card >
+      <h4 className="mt-5">
+        The content of this page can be modified on this path:
+      </h4>
+      <Alert variant="secondary">
+        <Breadcrumb className="p-0">
+          <Breadcrumb.Item linkAs="span">src</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">components</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">pairprogramming</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">tools</Breadcrumb.Item>
+          <Breadcrumb.Item active>Tools.js</Breadcrumb.Item>
+        </Breadcrumb>
+        </Alert>
+      <Alert variant="primary" className="mt-5">
+        <Card>
           <Card.Body>
             <Card.Title>Other platform for real-time collaboration</Card.Title>
             <Card.Text>
@@ -62,7 +86,7 @@ function Tools() {
                 <li>
                   Duckly (Support VS Code, IntelliJ IDEA, Android Stidio,
                   Wenstorm, PyCharm, Phpstorm, GoLand, RubyMine, Rider, Clion,
-                  AppCode, DataGrip)
+                  AppCode, DataGrip).
                 </li>
                 <li>
                   Floobits (Support Sublime Text, Atom, Neovim, Emacs, IntelliJ
