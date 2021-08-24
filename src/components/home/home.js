@@ -30,7 +30,7 @@ function Home() {
         <Link
           to="/Tic-Tac-Toe/pair-programming"
           className="text-decoration-none"
-          style={{ color: "black" }}
+          style={{ color: "white" }}
         >
           What is Pair Programming?
         </Link>
