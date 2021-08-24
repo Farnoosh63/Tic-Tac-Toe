@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="d-grid gap-2 mb-4">
-      <Alert variant="success">
+      <Alert variant="light">
         <Alert.Heading>
           Remote Pair Programming with Farnoosh Johnson
         </Alert.Heading>
@@ -21,12 +21,12 @@ function Home() {
         <Link
           to="/Tic-Tac-Toe/game"
           className="text-decoration-none"
-          style={{ color: "black" }}
+          style={{ color: "#333" }}
         >
           Game
         </Link>
       </Button>
-      <Button variant="success" size="lg">
+      <Button variant="primary" size="lg">
         <Link
           to="/Tic-Tac-Toe/pair-programming"
           className="text-decoration-none"

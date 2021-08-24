@@ -7,9 +7,7 @@ function Benefits() {
     <div>
       <h3>Benefits of Pair Programming:</h3>
       <ul className="my-4">
-        <li>
-          A collaborative way to solve problems.
-        </li>
+        <li>A collaborative way to solve problems.</li>
         <li>
           Increase code quality, and reducing the risk of errors and going down
           the rabbit hole.
@@ -28,7 +26,7 @@ function Benefits() {
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Button variant="success" size="lg">
+            <Button variant="primary" size="lg">
               <Link
                 to="/Tic-Tac-Toe/pair-programming"
                 className="text-decoration-none"
@@ -39,7 +37,7 @@ function Benefits() {
             </Button>
           </Col>
           <Col md={4}>
-            <Button variant="success" size="lg" className={classes.right}>
+            <Button variant="primary" size="lg" className={classes.right}>
               <Link
                 to="/Tic-Tac-Toe/pair-programming/tools"
                 className="text-decoration-none"

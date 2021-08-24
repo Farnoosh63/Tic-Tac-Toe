@@ -2,14 +2,27 @@ body {
   font-family: sans-serif;
   line-height: 2rem;
   font-size: 1rem;
+  color: #333;
 }
 
-.alert-primary {
-    color: #084298;
+.alert-primary,
+.btn-primary  {
+    color: #fff;
     background-color: #1696d2;
     border-color: #1696d2;
 }
 
 .breadcrumb {
   margin-bottom: 0;
+}
+.alert-light {
+  color: #333;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #1696d2;
+  border-color: #1696d2;
 }

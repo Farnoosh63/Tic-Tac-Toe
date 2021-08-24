@@ -74,7 +74,7 @@ function Tools() {
           </ListGroup>
         </Card.Body>
       </Card>
-      <Alert variant="primary" className="mt-5">
+      <Alert variant="secondary" className="mt-5">
         <Card>
           <Card.Body>
             <Card.Title>Other platform for real-time collaboration</Card.Title>
@@ -111,7 +111,7 @@ function Tools() {
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col className="d-grid gap-2">
-            <Button variant="success" size="lg">
+            <Button variant="primary" size="lg">
               <Link
                 to="/Tic-Tac-Toe/pair-programming/benefits"
                 className="text-decoration-none"

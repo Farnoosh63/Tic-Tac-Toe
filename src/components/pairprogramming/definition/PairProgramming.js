@@ -17,7 +17,7 @@ function PairProgramming() {
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col md={4}>
-            <Button variant="success" size="lg">
+            <Button variant="primary" size="lg">
               <Link
                 to="/Tic-Tac-Toe"
                 className="text-decoration-none"
@@ -28,7 +28,7 @@ function PairProgramming() {
             </Button>
           </Col>
           <Col md={4}>
-            <Button variant="success" size="lg" className={classes.right}>
+            <Button variant="primary" size="lg" className={classes.right}>
               <Link
                 to="/Tic-Tac-Toe/pair-programming/benefits"
                 className="text-decoration-none"
