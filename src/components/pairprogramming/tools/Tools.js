@@ -4,8 +4,14 @@ import {
   ListGroupItem,
   Alert,
   Breadcrumb,
+  Container,
+  Button,
+  Row,
+  Col
 } from "react-bootstrap";
 import classes from './Tools.module.css';
+import { Link } from "react-router-dom";
+
 
 const image = {
     width: "5rem",
@@ -33,6 +39,10 @@ function Tools() {
         <Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroupItem>
+              Share your code with your co-workers without having to clone a
+              repo or install any dependencies that your code relies on.
+            </ListGroupItem>
+            <ListGroupItem>
               There is one host and deafult of five participants but can
               increase the guest limit to 30
             </ListGroupItem>
@@ -44,8 +54,8 @@ function Tools() {
               as an anonymous with limited feature.
             </ListGroupItem>
             <ListGroupItem>
-              Participants can code in their local VScode or even a web broswer
-              on their phone.
+              Participants can code in their local VScode (with Live Share
+              plugin installed) or a web broswer on their phone.
             </ListGroupItem>
             <ListGroupItem>
               The user joined with a web browser will have limited features with
@@ -64,18 +74,6 @@ function Tools() {
           </ListGroup>
         </Card.Body>
       </Card>
-      <h4 className="mt-5">
-        The content of this page can be modified on this path:
-      </h4>
-      <Alert variant="secondary">
-        <Breadcrumb className="p-0">
-          <Breadcrumb.Item linkAs="span">src</Breadcrumb.Item>
-          <Breadcrumb.Item linkAs="span">components</Breadcrumb.Item>
-          <Breadcrumb.Item linkAs="span">pairprogramming</Breadcrumb.Item>
-          <Breadcrumb.Item linkAs="span">tools</Breadcrumb.Item>
-          <Breadcrumb.Item active>Tools.js</Breadcrumb.Item>
-        </Breadcrumb>
-        </Alert>
       <Alert variant="primary" className="mt-5">
         <Card>
           <Card.Body>
@@ -98,6 +96,33 @@ function Tools() {
           </Card.Body>
         </Card>
       </Alert>
+      <h4 className="mt-5">
+        The content of this page can be modified on this path:
+      </h4>
+      <Alert variant="secondary">
+        <Breadcrumb className="p-0">
+          <Breadcrumb.Item linkAs="span">src</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">components</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">pairprogramming</Breadcrumb.Item>
+          <Breadcrumb.Item linkAs="span">tools</Breadcrumb.Item>
+          <Breadcrumb.Item active>Tools.js</Breadcrumb.Item>
+        </Breadcrumb>
+      </Alert>
+      <Container className="mt-5">
+        <Row className="justify-content-md-center">
+          <Col className="d-grid gap-2">
+            <Button variant="success" size="lg">
+              <Link
+                to="/Tic-Tac-Toe/pair-programming/benefits"
+                className="text-decoration-none"
+                style={{ color: "white" }}
+              >
+                &#8810; Back
+              </Link>
+            </Button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

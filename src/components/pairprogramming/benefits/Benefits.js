@@ -6,26 +6,26 @@ function Benefits() {
   return (
     <div>
       <h3>Benefits of Pair Programming:</h3>
-      <ul>
+      <ul className="my-4">
         <li>
-          A collaborative way that involves a lot of communication and
-          engagement.
+          A collaborative way to solve problems.
         </li>
         <li>
           Increase code quality, and reducing the risk of errors and going down
           the rabbit hole.
         </li>
         <li>Transfer skills in the organization.</li>
+        <li>Leads to connections and teamwork.</li>
       </ul>
 
       <h3>Where should we use Pair Programming?</h3>
-      <ul>
+      <ul className="my-4">
         <li>Complex pull request reviews</li>
         <li>Coaching</li>
         <li>Occasional problem-solving session</li>
         <li>As a recruitment Tool</li>
       </ul>
-      <Container>
+      <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col md={4}>
             <Button variant="success" size="lg">
@@ -39,11 +39,7 @@ function Benefits() {
             </Button>
           </Col>
           <Col md={4}>
-            <Button
-              variant="success"
-              size="lg"
-              className={classes.right}
-            >
+            <Button variant="success" size="lg" className={classes.right}>
               <Link
                 to="/Tic-Tac-Toe/pair-programming/tools"
                 className="text-decoration-none"

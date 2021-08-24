@@ -13,7 +13,7 @@ function Home() {
           remotely pair programming.
         </p>
         <hr />
-        <p className="mb-0">
+        <p className="mb-0 fst-italic">
           This app is built on Reactjs, a Javascript Library.
         </p>
       </Alert>

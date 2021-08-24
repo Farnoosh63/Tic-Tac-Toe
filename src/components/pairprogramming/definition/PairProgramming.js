@@ -8,13 +8,13 @@ function PairProgramming() {
   return (
     <div className={classes.pairprogramming}>
       <h3>What is Pair Programming?</h3>
-      <p>
+      <p className="mt-4">
         Pair Programming is where two people wite code together using one
         computer at the same time. In the virtual world, we will remotely share
         a screen and the same code editor and both programmers can control the
         keyboard at the same and programming out loud.
       </p>
-      <Container>
+      <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col md={4}>
             <Button variant="success" size="lg">
