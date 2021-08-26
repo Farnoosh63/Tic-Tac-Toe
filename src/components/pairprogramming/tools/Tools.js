@@ -7,7 +7,8 @@ import {
   Container,
   Button,
   Row,
-  Col
+  Col,
+  Placeholder
 } from "react-bootstrap";
 import classes from './Tools.module.css';
 import { Link } from "react-router-dom";
@@ -39,23 +40,11 @@ function Tools() {
         <Card.Body>
           <ListGroup className="list-group-flush">
             <ListGroupItem>
-              Share your code with your co-workers without having to clone a
-              repo or install any dependencies that your code relies on.
-            </ListGroupItem>
-            <ListGroupItem>
-              There is one host and deafult of five participants but can
-              increase the guest limit to 30
-            </ListGroupItem>
-            <ListGroupItem>
               Participants can use VS Code, or web browser
             </ListGroupItem>
             <ListGroupItem>
               Identifies a user by Microsoft or Github account.You also can join
               as an anonymous with limited feature.
-            </ListGroupItem>
-            <ListGroupItem>
-              Participants can code in their local VScode (with Live Share
-              plugin installed) or a web broswer on their phone.
             </ListGroupItem>
             <ListGroupItem>
               The user joined with a web browser will have limited features with
@@ -74,7 +63,7 @@ function Tools() {
           </ListGroup>
         </Card.Body>
       </Card>
-      <Alert variant="secondary" className="mt-5">
+      <Alert variant="secondary" className="mt-3">
         <Card>
           <Card.Body>
             <Card.Title>Other platform for real-time collaboration</Card.Title>
@@ -108,6 +97,41 @@ function Tools() {
           <Breadcrumb.Item active>Tools.js</Breadcrumb.Item>
         </Breadcrumb>
       </Alert>
+      <Container>
+        <Row xs={1} md={2}>
+          <Card>
+            <Card.Body>
+              <Card.Text>
+              {/* Remove lines 106 to 113 and add your text */}
+                <Placeholder as={Card.Title} animation="glow">
+                  <Placeholder xs={6} />
+                </Placeholder>
+                <Placeholder as={Card.Text} animation="glow">
+                  <Placeholder xs={7} /> <Placeholder xs={4} />{" "}
+                  <Placeholder xs={4} /> <Placeholder xs={6} />{" "}
+                  <Placeholder xs={8} />
+                </Placeholder>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card>
+            <Card.Body>
+              <Card.Text>
+              {/* Remove lines 121 to 128 and add your text*/}
+                <Placeholder as={Card.Title} animation="glow">
+                  <Placeholder xs={6} />
+                </Placeholder>
+                <Placeholder as={Card.Text} animation="glow">
+                  <Placeholder xs={7} /> <Placeholder xs={4} />{" "}
+                  <Placeholder xs={4} /> <Placeholder xs={6} />{" "}
+                  <Placeholder xs={8} />
+                </Placeholder>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          {/* Looking to add more cards? Copy <Card></Card> component from any examples above and paste it here. */}
+        </Row>
+      </Container>
       <Container className="mt-5">
         <Row className="justify-content-md-center">
           <Col className="d-grid gap-2">
