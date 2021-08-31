@@ -11,12 +11,27 @@ export default class Counter extends Component {
     return this.state.tags.map((tag) => <li key={tag}>{tag}</li>);
   }
 
+  handleIncrement() {
+    console.log("Increment Clicked");
+  }
+
   render() {
     return (
       <React.Fragment>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
+        <Button
+          onClick={this.handleIncrement}
+          variant={this.getButtonVariant()}
+          size="sm"
+        >
+          Add Tag
+        </Button>
       </React.Fragment>
     );
+  }
+
+  getButtonVariant() {
+    return this.state.count === 0 ? "warning" : "primary";
   }
 }
