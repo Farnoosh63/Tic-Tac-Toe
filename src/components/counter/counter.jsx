@@ -11,9 +11,9 @@ export default class Counter extends Component {
     return this.state.tags.map((tag) => <li key={tag}>{tag}</li>);
   }
 
-  handleIncrement = () => {
+  handleIncrement = (product) => {
     this.setState({ count: this.state.count + 1 });
-    console.log(this.state.count);
+    console.log(product);
   };
 
   render() {
@@ -21,9 +21,10 @@ export default class Counter extends Component {
       <React.Fragment>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
+        <Badge bg={this.handleVariant()}>{this.formatCount()}</Badge>
         <Button
-          onClick={this.handleIncrement}
-          variant={this.getButtonVariant()}
+          onClick={(product) => this.handleIncrement(product)}
+          variant={this.handleVariant()}
           size="sm"
         >
           Add Tag
@@ -32,7 +33,11 @@ export default class Counter extends Component {
     );
   }
 
-  getButtonVariant() {
+  formatCount() {
+    return this.state.count === 0 ? "Zero" : this.state.count;
+  }
+
+  handleVariant() {
     return this.state.count === 0 ? "warning" : "primary";
   }
 }
