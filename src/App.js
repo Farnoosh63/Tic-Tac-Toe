@@ -26,6 +26,9 @@ function App() {
         <Route path="/Tic-Tac-Toe/pair-programming/tools" exact>
           <Tools />
         </Route>
+        <Route path="/Tic-Tac-Toe/counter" exact>
+          <Counter />
+        </Route>
       </Switch>
     </Layout>
   );
