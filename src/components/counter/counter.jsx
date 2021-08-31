@@ -6,19 +6,19 @@ export default class Counter extends Component {
     tags: ["tag1", "tag2", "tag3"],
   };
 
-  constructor() {
-    super();
-    this.handleIncrement = this.handleIncrement.bind(this);
-  }
+  // constructor() {
+  //   super();
+  //   this.handleIncrement = this.handleIncrement.bind(this);
+  // }
 
   renderTags() {
     if (this.state.tags.length === 0) return <p> There are no Tags!</p>;
     return this.state.tags.map((tag) => <li key={tag}>{tag}</li>);
   }
 
-  handleIncrement() {
+  handleIncrement = () => {
     console.log("Increment Clicked", this);
-  }
+  };
 
   render() {
     return (
