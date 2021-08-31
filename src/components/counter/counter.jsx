@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Badge, Button } from "react-bootstrap";
 export default class Counter extends Component {
   state = {
-    count: 0,
+    value: this.props.value,
     tags: ["tag1", "tag2", "tag3"],
   };
 
@@ -12,16 +12,17 @@ export default class Counter extends Component {
   }
 
   handleIncrement = (product) => {
-    this.setState({ count: this.state.count + 1 });
-    console.log(product);
+    this.setState({ value: this.state.value + 1 });
   };
 
   render() {
+    console.log("props", this.props);
+
     return (
       <React.Fragment>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
-        <Badge bg={this.handleVariant()}>{this.formatCount()}</Badge>
+        <Badge bg={this.handleVariant()}>{this.formatValue()}</Badge>
         <Button
           onClick={(product) => this.handleIncrement(product)}
           variant={this.handleVariant()}
@@ -33,11 +34,11 @@ export default class Counter extends Component {
     );
   }
 
-  formatCount() {
-    return this.state.count === 0 ? "Zero" : this.state.count;
+  formatValue() {
+    return this.state.value === 0 ? "Zero" : this.state.value;
   }
 
   handleVariant() {
-    return this.state.count === 0 ? "warning" : "primary";
+    return this.state.value === 0 ? "warning" : "primary";
   }
 }
