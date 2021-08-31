@@ -8,19 +8,19 @@ import {
   Button,
   Row,
   Col,
-  Placeholder
+  Placeholder,
 } from "react-bootstrap";
-import classes from './Tools.module.css';
+import classes from "./Tools.module.css";
 import { Link } from "react-router-dom";
-
+import React from "react";
 
 const image = {
-    width: "5rem",
-    padding: "1px 1px 1px 0px"
-}
+  width: "5rem",
+  padding: "1px 1px 1px 0px",
+};
 function Tools() {
   return (
-    <div>
+    <React.Fragment>
       <Card className={classes.borderNone}>
         <Card.Body>
           <Card.Body className="d-flex align-items-center">
@@ -102,7 +102,7 @@ function Tools() {
           <Card>
             <Card.Body>
               <Card.Text>
-              {/* Remove lines 106 to 113 and add your text */}
+                {/* Remove lines 106 to 113 and add your text */}
                 <Placeholder as={Card.Title} animation="glow">
                   <Placeholder xs={6} />
                 </Placeholder>
@@ -117,7 +117,7 @@ function Tools() {
           <Card>
             <Card.Body>
               <Card.Text>
-              {/* Remove lines 121 to 128 and add your text*/}
+                {/* Remove lines 121 to 128 and add your text*/}
                 <Placeholder as={Card.Title} animation="glow">
                   <Placeholder xs={6} />
                 </Placeholder>
@@ -147,7 +147,7 @@ function Tools() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </React.Fragment>
   );
 }
 

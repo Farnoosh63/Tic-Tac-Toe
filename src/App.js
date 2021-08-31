@@ -1,11 +1,12 @@
-import { Route, Router, Switch } from 'react-router-dom';
-import GameBoard from './components/game/Game';
-import Layout from './components/layout/Layout';
-import PairProgramming from './components/pairprogramming/definition/PairProgramming';
-import Home from './components/home/home';
+import { Route, Switch } from "react-router-dom";
+import GameBoard from "./components/game/Game";
+import Layout from "./components/layout/Layout";
+import PairProgramming from "./components/pairprogramming/definition/PairProgramming";
+import Home from "./components/home/home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Benefits from './components/pairprogramming/benefits/Benefits';
-import Tools from './components/pairprogramming/tools/Tools';
+import Benefits from "./components/pairprogramming/benefits/Benefits";
+import Tools from "./components/pairprogramming/tools/Tools";
+import Counter from "./components/counter/counter";
 
 function App() {
   return (
