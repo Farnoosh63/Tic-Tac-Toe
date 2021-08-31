@@ -20,7 +20,7 @@ export default class Counter extends Component {
 
     return (
       <React.Fragment>
-        {this.props.children}
+        <h4>{this.props.id}</h4>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
         <Badge bg={this.handleVariant()}>{this.formatValue()}</Badge>
