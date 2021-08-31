@@ -17,19 +17,30 @@ export default class Counter extends Component {
 
   render() {
     console.log("props", this.props);
-
+    const classes = "m-2";
     return (
       <React.Fragment>
         <h4>{this.props.id}</h4>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
-        <Badge bg={this.handleVariant()}>{this.formatValue()}</Badge>
+        <Badge bg={this.handleVariant()} className={classes}>
+          {this.formatValue()}
+        </Badge>
         <Button
           onClick={(product) => this.handleIncrement(product)}
           variant={this.handleVariant()}
           size="sm"
+          className={classes}
         >
-          Add Tag
+          Increment
+        </Button>
+        <Button
+          onClick={() => console.log("clicked")}
+          variant="danger"
+          size="sm"
+          className={classes}
+        >
+          Delete
         </Button>
       </React.Fragment>
     );
