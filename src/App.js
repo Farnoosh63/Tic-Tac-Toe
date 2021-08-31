@@ -6,6 +6,7 @@ import Home from "./components/home/home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Benefits from "./components/pairprogramming/benefits/Benefits";
 import Tools from "./components/pairprogramming/tools/Tools";
+import Counters from "./components/counter/counters";
 import Counter from "./components/counter/counter";
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/Tic-Tac-Toe/counter" exact>
           <Counter />
+        </Route>
+        <Route path="/Tic-Tac-Toe/counters" exact>
+          <Counters />
         </Route>
       </Switch>
     </Layout>
