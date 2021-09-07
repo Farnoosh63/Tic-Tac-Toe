@@ -35,7 +35,7 @@ export default class Counter extends Component {
           Increment
         </Button>
         <Button
-          onClick={this.props.onDelete}
+          onClick={() => this.props.onDelete(this.props.id)}
           variant="danger"
           size="sm"
           className={classes}
