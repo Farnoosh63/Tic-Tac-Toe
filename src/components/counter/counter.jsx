@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Badge, Button } from "react-bootstrap";
 export default class Counter extends Component {
   state = {
-    value: this.props.value,
+    value: this.props.counter.value,
     tags: ["tag1", "tag2", "tag3"],
   };
 
@@ -35,7 +35,7 @@ export default class Counter extends Component {
           Increment
         </Button>
         <Button
-          onClick={() => this.props.onDelete(this.props.id)}
+          onClick={() => this.props.onDelete(this.props.counter.id)}
           variant="danger"
           size="sm"
           className={classes}
