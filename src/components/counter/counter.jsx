@@ -16,7 +16,7 @@ export default class Counter extends Component {
   };
 
   handleReset = (item) => {
-    this.setState({ value: (this.state.value = 0) });
+    this.setState({ value: 0 });
   };
 
   handleDelete = (counterValue) => {
