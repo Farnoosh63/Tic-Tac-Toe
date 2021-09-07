@@ -24,7 +24,9 @@ export default class Counter extends Component {
   };
 
   render() {
-    console.log("props", this.props);
+    console.log("counter: Rendered");
+
+    // console.log("props", this.props);
     const classes = "m-2";
     return (
       <React.Fragment>

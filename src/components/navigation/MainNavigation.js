@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import classes from "./MainNavigation.module.css";
 
 function MainNavigation() {
+  console.log("Main Navigation: Rendered");
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>Learning Circle</div>

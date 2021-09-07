@@ -2,6 +2,8 @@ import MainNavigation from "../navigation/MainNavigation";
 import classes from "./Layout.module.css";
 
 function Layout(props) {
+  console.log("Layout: Rendered");
+
   return (
     <div>
       <MainNavigation />

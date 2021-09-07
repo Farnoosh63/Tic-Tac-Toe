@@ -2,6 +2,7 @@ import { Button, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function Home() {
+  console.log("Home: Rendered");
   return (
     <div className="d-grid gap-2 mb-4">
       <Alert variant="light">

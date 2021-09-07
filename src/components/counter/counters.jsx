@@ -17,6 +17,7 @@ class Counters extends Component {
   };
 
   render() {
+    console.log("counters: Rendered");
     return (
       <React.Fragment>
         {this.state.counters.map((counter) => (

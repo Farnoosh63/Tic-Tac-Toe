@@ -10,6 +10,7 @@ import Counters from "./components/counter/counters";
 import Counter from "./components/counter/counter";
 
 function App() {
+  console.log("App: Renderd");
   return (
     <Layout>
       <Switch>
