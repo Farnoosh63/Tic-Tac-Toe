@@ -37,6 +37,14 @@ export default class Counter extends Component {
         >
           Reset
         </Button>
+        <Button
+          onClick={() => this.props.onCompleteDelete(this.props.counter.id)}
+          className={classes}
+          variant="secondary"
+          size="sm"
+        >
+          Complete Delete
+        </Button>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
         <Badge bg={this.handleVariant()} className={classes}>
