@@ -19,6 +19,10 @@ export default class Counter extends Component {
     this.setState({ value: (this.state.value = 0) });
   };
 
+  handleDelete = (counterValue) => {
+    this.setState({ value: this.state.value - 1 });
+  };
+
   render() {
     console.log("props", this.props);
     const classes = "m-2";
@@ -47,7 +51,7 @@ export default class Counter extends Component {
           Increment
         </Button>
         <Button
-          onClick={() => this.props.onDelete(this.props.counter.id)}
+          onClick={(counterValue) => this.handleDelete(counterValue)}
           variant="danger"
           size="sm"
           className={classes}
