@@ -35,7 +35,7 @@ export default class Counter extends Component {
           Increment
         </Button>
         <Button
-          onClick={() => console.log("clicked")}
+          onClick={this.props.onDelete}
           variant="danger"
           size="sm"
           className={classes}

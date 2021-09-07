@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import classes from './MainNavigation.module.css';
+import { Link } from "react-router-dom";
+import classes from "./MainNavigation.module.css";
 
 function MainNavigation() {
   return (
@@ -15,6 +15,9 @@ function MainNavigation() {
           </li>
           <li>
             <Link to="/Tic-Tac-Toe/pair-programming">Pair Programming</Link>
+          </li>
+          <li>
+            <Link to="/Tic-Tac-Toe/counters">Counters</Link>
           </li>
         </ul>
       </nav>
