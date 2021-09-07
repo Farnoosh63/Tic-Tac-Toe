@@ -15,12 +15,24 @@ export default class Counter extends Component {
     this.setState({ value: this.state.value + 1 });
   };
 
+  handleReset = (item) => {
+    this.setState({ value: (this.state.value = 0) });
+  };
+
   render() {
     console.log("props", this.props);
     const classes = "m-2";
     return (
       <React.Fragment>
         <h4>{this.props.id}</h4>
+        <Button
+          onClick={(item) => this.handleReset(item)}
+          className={classes}
+          variant="success"
+          size="sm"
+        >
+          Reset
+        </Button>
         {this.state.tags.length === 0 && "Please create a new tag!"}
         <ul>{this.renderTags()}</ul>
         <Badge bg={this.handleVariant()} className={classes}>
